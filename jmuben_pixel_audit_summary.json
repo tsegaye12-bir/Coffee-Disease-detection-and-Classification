@@ -1,0 +1,46 @@
+{
+  "archive": "/home/ubuntu/upload/12.zip",
+  "dataset_folder": "JMuBEN",
+  "raw_class_counts": {
+    "Cerscospora": 7681,
+    "Healthy": 18983,
+    "Leaf rust": 8336,
+    "Miner": 16978,
+    "Phoma": 6571
+  },
+  "raw_file_total": 58549,
+  "raw_file_type": "JPEG",
+  "readable_files": 58549,
+  "corrupt_files": 0,
+  "cross_class_decoded_pixel_conflict_groups": 0,
+  "byte_sha256_unique_counts_by_class": {
+    "Cerscospora": 322,
+    "Healthy": 62,
+    "Leaf rust": 1042,
+    "Miner": 1639,
+    "Phoma": 691
+  },
+  "byte_sha256_unique_total": 3756,
+  "decoded_rgb_pixel_unique_counts_by_class": {
+    "Cerscospora": 82,
+    "Healthy": 26,
+    "Leaf rust": 521,
+    "Miner": 547,
+    "Phoma": 181
+  },
+  "decoded_rgb_pixel_unique_total": 1357,
+  "duplicate_file_instances_removed_by_decoded_rgb_hash": 57192,
+  "seed": 42,
+  "unique_image_split_counts": {
+    "train": 949,
+    "validation": 204,
+    "test": 204
+  },
+  "split_manifest": "/home/ubuntu/coffee_xai/results_jmuben/split_manifest.json",
+  "duplicate_method": "SHA-256 over native decoded RGB pixels plus width/height; one representative retained per same-label pixel group. No cross-class pixel conflicts were found.",
+  "limitations": [
+    "Decoded-pixel deduplication does not identify all perceptual near-duplicates or related views of the same leaf/plant.",
+    "The Healthy class contains only 26 decoded-pixel-unique images.",
+    "Published JMuBEN/JMuBEN2 count 58,555 differs by six from this archive's 58,549 files; the discrepancy is unresolved."
+  ]
+}
